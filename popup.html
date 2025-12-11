@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 700px;
+                padding: 10px;
+                font-family: Arial, sans-serif;
+            }
+            button {
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin: 5px 0;
+            }
+            #start {
+                background: #4CAF50;
+                color: white;
+            }
+            #stop {
+                background: #f44336;
+                color: white;
+            }
+            #status {
+                margin-top: 10px;
+                color: #666;
+                font-weight: bold;
+            }
+            #log{
+                width: 700px; 
+                height: 400px; 
+                font-size: 12px; 
+                white-space: pre;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Price Scraper</h3>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="clearLog">Clear Log</button>
+        <div id="status">Ready</div>
+        <textarea id="log" style=""></textarea>
+        <script src="popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "api": {
+        "baseUrl": "https://test.ru/api",
+        "listEndpoint": "/products/skus/list",
+        "priceEndpoint": "/import/parcer/prices"
+    },
+
+    "market": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "headers": {
+            "Accept-Language": "ru-RU,ru;q=0.9"
+        },
+        "priceSelectors": [
+            "[data-auto=\"main\"] [data-auto=\"snippet-price-current\"] > span:first-child"
+        ]
+    },
+
+    "scraper": {
+        "cycleDelay": 10000,
+        "maxConcurrent": 3,
+        "logEnabled": true,
+        "saveLogs": true
+    }
+}
